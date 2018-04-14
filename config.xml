@@ -6,7 +6,7 @@
         id        = "com.solaceinteractive.hackaton"
         version   = "0.0.2">
 
-    <name>AMA/name>
+    <name>AMA</name>
 
     <description>
        Aplicación de Monitoreo del Agua
