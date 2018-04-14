@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Inicio/Sucursales</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/promociones.css">
+		<link rel="stylesheet" type="text/css" href="css/menuDes.css">
+		<link rel="stylesheet" type="text/css" href="css/tarjetas.css">
+		<link rel="stylesheet" type="text/css" href="css/Fonts/stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="css/FontAwesome/fontawesome-all.css">
+		<script type="text/javascript" src="js/funciones.js"></script>
+		<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval' ; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';">
+	</head>
+	<body id="inicio" onload="verificar();">
+		<div id="sidebar" class="sidebar">
+				<div class="ama">
+					<h1 class="txt-cntr">AMA</h1>
+				</div>
+				<ul class="menu">
+					<i class="fa fa-home" style="font-size: 22px; float: left; margin-top: 5px;"></i><li><a href="inicio.html" style="width: 80%; float: left; margin-left: 8px;">     Pagina Principal</a></li><br><br>
+					<i class="fa fa-gift" style="font-size: 22px; float: left; margin-top: 5px;"></i><li><a href="promociones.html" style="width: 80%; float: left; margin-left: 8px;">Recompensas</a></li>
+				</ul>
+			</div>
+		<div class="nav-bar">
+			<div id="contenido">
+				<i id="abrir" class="abrir-cerrar fas fa-bars" onclick="mostrar()" style="color: var(--oscuro);"></i>
+				<i id="cerrar" class="abrir-cerrar fas fa-bars" href="#" onclick="ocultar()" style="color: var(--oscuro);"></i>
+			</div>
+			<div class="header"><h1 class="txt-cntr">AMA</h1></div>
+			
+		</div>
+		<div class="titulo">
+			<h1 style="color: white;">Recompensas</h1>
+		</div>
+		<div class="contiene">
+			<div class="recompensas">
+				<div class = 'nivel' id="nivel1">
+					<div class="cont-img">
+						<img class="img" src="cinepolis.jpeg">
+					</div>
+					<div class="info">
+						<h2 class="textoNivel">Nivel: </h2><input type="number" id="nivelP1" name="" value="1" readonly>
+						<h2 class="tlt-info txt-cntr">2x1 Cinépolis</h2>
+						<ul>
+							<li>Aplica 2x1 de lunes a Viernes</li>
+							<li>en cualquier Cinepolis</li>
+						</ul>
+					</div>
+				</div>
+				<div class = 'nivel' id="nivel2">
+					<div class="cont-img">
+						<img class="img" src="coca.png">
+					</div>
+					<div class="info">
+						<h2 class="textoNivel">Nivel: </h2><input type="number" id="nivelP2" name="" value="5" readonly>
+						<h2 class="tlt-info txt-cntr">15% de descuento</h2>
+						<ul>
+							<li>Aplica en Coca-Cola de 2lt</li>
+							<li>Válido solo para tiendas OXXO</li>
+						</ul>
+					</div>
+				</div>
+				<div class = 'nivel' id="nivel3">
+					<div class="cont-img">
+						<img class="img" src="bici.jpg">
+					</div>
+					<div class="info">
+						<h2 class="textoNivel">Nivel: </h2><input type="number" id="nivelP3" name="" value="25" readonly>
+						<h2 class="tlt-info txt-cntr">Bicicleta Benotto</h2>
+						<ul>
+							<li> Rodada 20, velocidades manuales</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
