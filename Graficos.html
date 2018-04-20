@@ -18,34 +18,28 @@
 		<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval' ; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';">
 	</head>
 	<body id="inicio" onload="compara(), rankNivelGasto(), level()">
-			<div id="sidebar" class="sidebar">
-				<div class="ama" style="background-color:  #262228">
-					<h1 class="txt-cntr">AMA</h1>
-				</div>
-				<div class="user" >
-					<div id="izq">
-						<img class="img" id="img1" src="img/user.png" style="padding-left:15px; height: 75%;">
-						<p style="font-size: 20px; padding-left: 35px; color: white;  " id="level"></p>
+		<div id="sidebar" class="sidebar">
+				<div class="primer">
+					<div class="ama" >
+						<h1 class="txt-cntr">AMA</h1>
 					</div>
-					<div id="der">						
-						
+					<div class="user" >
+						<div id="izq">
+							<img class="img" id="img1" src="img/user.png" style="padding-left:15px;height: 75%;width: 60%;position:  absolute;left: 15%;">
+							<p style="font-size: 20px; padding-left: 35px; color: white; position: absolute; bottom: 0; left: 20%;  " id="level"></p>
+						</div>
 					</div>
-						
-					
 				</div>
-				<div style="width: 100%; height: 100%; background-color: #FFCE00;">
+				
+				<div class="cosas">
 					<ul class="menu">
 						<br>
 						<i class="fa fa-home" style="font-size: 25px; float: left; margin-top: 5px; color: white;"></i><li><a href="inicio.html" style="width: 80%; float: left; margin-left: 10px; font-size: 22px; color: white;">     Pagina Principal</a></li><br><br><br>
-
 						<i class="fa fa-gift" style="font-size: 25px; float: left; margin-top: 5px; color: white;"></i><li><a href="promociones.html" style="width: 80%; float: left; margin-left: 10px; font-size: 22px; color: white;">		Recompensas</a></li><br><br><br>
-
 						<i class="fas fa-chart-line" style="font-size: 25px; float: left; margin-top: 5px; color: white;"></i><li><a href="Graficos.html" style="width: 80%; float: left; margin-left: 10px; font-size: 22px; color: white;">			Ranking</a></li><br><br><br>
-
 						<i class="fas fa-question-circle" style="font-size: 25px; float: left; margin-top: 5px; color: white;"></i><li><a href="acercaDe.html" style="width: 80%; float: left; margin-left: 10px; font-size: 22px; color: white;">	  Sobre AMA</a></li><br><br><br>
-	 
+						
 						<i class="fas fa-comments" style="font-size: 25px; float: left; margin-top: 5px; color: white;"></i><li><a href="#" style="width: 80%; float: left; margin-left: 10px; font-size: 22px; color: white;">				Contacto</a></li>
-
 					</ul>
 				</div>
 			</div>
@@ -61,21 +55,21 @@
 			<h1 style="color: white;">Información general</h1>
 		</div>
 		<div class="contiene" style="margin-left: 11px;">
-			<center><div style="width: 95%; position: absolute;"><canvas id="caca" ></canvas></div></center>			
+			<center><div style="width: 95%; position: absolute;"><canvas id="caca" ></canvas></div></center>
 		</div>
 		<div class="contiene2">
-			<center><div style="width: 95%; position: absolute;"><canvas id="pipi" ></canvas></div></center>			
+			<center><div style="width: 95%; position: absolute;"><canvas id="pipi" ></canvas></div></center>
 		</div>
 		<div class="contiene3">
 			<center>
-				<h3>TOP 5: Personas con mayor racha</h3><br>
-				<ul>
-					<li>David: nivel 32</li><br>
-					<li>Edgar: nivel 31</li><br>
-					<li>Jorge: nivel 29</li><br>
-					<li>Hugo: nivel 29</li><br>
-					<li>Alejandro: nivel 22</li>
-				</ul>
+			<h3>TOP 5: Personas con mayor racha</h3><br>
+			<ul>
+				<li>David: nivel 32</li><br>
+				<li>Edgar: nivel 31</li><br>
+				<li>Jorge: nivel 29</li><br>
+				<li>Hugo: nivel 29</li><br>
+				<li>Alejandro: nivel 22</li>
+			</ul>
 			</center>
 		</div>
 	</body>
