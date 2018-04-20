@@ -75,7 +75,7 @@ function llenado() {
 			inicio = JSON.parse(inicioAjax.responseText);
 
 			if(inicio.length > 0){
-				bandera = parseInt(inicio[0].puntaje);
+				bandera = parseInt(inicio[0].litrosTot);
 				localStorage.setItem('timer', bandera);
 				if(bandera > 60){
 					hola = 
@@ -153,9 +153,8 @@ function actualizar() {
 
 
 			inicio = JSON.parse(inicioAjax.responseText);
-
 			if(inicio.length > 0){
-				bandera = parseInt(inicio[0].puntaje);
+				bandera = parseInt(inicio[0].litrosTot);
 				timer = localStorage.getItem('timer');
 				if (bandera != timer) {
 					window.location = 'inicio.html';
