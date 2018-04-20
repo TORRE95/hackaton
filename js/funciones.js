@@ -1,4 +1,7 @@
-
+function level(){
+	var n = localStorage.getItem('nivel');
+	document.getElementById('level').innerText = "Nivel "+n;
+}
 
 function mostrar() {
     document.getElementById("sidebar").style.width = "250px";
@@ -165,6 +168,146 @@ function actualizar() {
 	setTimeout(function(){
 		console.log("actualizando")
 		actualizar();
-	},3000);
+	},30000);
 	
 }
+function compara() {
+var ctx = document.getElementById("caca");
+
+Chart.defaults.global.defaultFontColor = "#ffffff";
+Chart.defaults.global.defaultFontSize = 10;
+
+var dataFirst = {
+    label: "Consumo de agua por personas sin AMA",
+    data: [80, 79, 75, 70, 80, 85, 80],
+    lineTension: 0.3,
+    fill: false,
+    borderColor: '#FFCE00',
+    backgroundColor: 'transparent',
+    pointBorderColor: '#FFCE00',
+    pointBackgroundColor: '#FFCE00',
+    pointRadius: 5,
+    pointHoverRadius: 15,
+    pointHitRadius: 30,
+    pointBorderWidth: 2,
+    pointStyle: 'rectRounded',
+    borderDash: [2, 2]
+  };
+
+var dataSecond = {
+    label: "Tu consumo de agua en Litros",
+    data: [50, 55, 55, 53, 59, 55, 60],
+    lineTension: 0.3,
+    fill: false,
+    borderColor: '#038fff',
+    backgroundColor: '#038fff',
+    pointBorderColor: '#038fff',
+    pointBackgroundColor: '#038fff',
+    pointRadius: 5,
+    pointHoverRadius: 15,
+    pointHitRadius: 30,
+    pointStyle: 'rectRounded',
+    pointBorderWidth: 2,
+  };
+
+var dataThird = {
+    label: "Consumo saludable según la OMS",
+    data: [61, 61, 61, 61, 61, 61, 61],
+    lineTension: 0.3,
+    fill: false,
+    borderColor: '#00b849',
+    backgroundColor: 'transparent',
+    pointBorderColor: '#00b849',
+    pointBackgroundColor: '#00b849',
+    pointRadius: 5,
+    pointHoverRadius: 15,
+    pointHitRadius: 30,
+    pointBorderWidth: 2,
+    pointStyle: 'rectRounded',
+    borderDash: [2, 2]
+  };
+
+var data = {
+  labels: ["Enero", "Marzo", "Mayo", "Julio", "Septiembre", "Noviembre", "Diciembre"],
+  datasets: [dataFirst, dataSecond, dataThird]
+};
+
+var chartOptions = {
+
+	title: {
+		fontColor: 'aliceblue',
+        display: true,
+        text: 'Gasto de agua general (litros)',
+        fontSize: 18,
+        fontFamily: 'Helvetica'
+    },
+ 	legend: {
+    display: false,
+    position: 'top'
+  }
+};
+
+var lineChart = new Chart(ctx, {
+  type: 'line',
+  data: data,
+  options: chartOptions,
+
+});
+	
+}
+
+function rankNivelGasto(){
+	var nivel = localStorage.getItem('nivel');
+	var ctx = document.getElementById("pipi");
+
+Chart.defaults.global.defaultFontColor = "#ffffff";
+Chart.defaults.global.defaultFontSize = 10;
+
+var dataFirst = {
+    label: "Litros usados",
+    data: [65,59,59,65,65],
+    lineTension: 0.3,
+    fill: false,
+    borderColor: '#FFCE00',
+    backgroundColor: 'transparent',
+    pointBorderColor: '#FFCE00',
+    pointBackgroundColor: '#FFCE00',
+    pointRadius: 5,
+    pointHoverRadius: 15,
+    pointHitRadius: 30,
+    pointBorderWidth: 2,
+    pointStyle: 'rectRounded',
+    borderDash: [2, 2]
+  };
+
+var data = {
+  labels: ["1-6", "7-12", "13-18", "19-25", "25+"],
+  datasets: [dataFirst]
+};
+
+var chartOptions = {
+
+	title: {
+		fontColor: 'aliceblue',
+        display: true,
+        text: 'Promedio de gasto de agua por nivel (litros)',
+        fontSize: 18,
+        fontFamily: 'Helvetica'
+    },
+ 	legend: {
+    display: false,
+    position: 'top'
+  }
+};
+
+var lineChart = new Chart(ctx, {
+  type: 'line',
+  data: data,
+  backgroundColor: 'white',
+  options: chartOptions,
+
+});
+}
+
+
+

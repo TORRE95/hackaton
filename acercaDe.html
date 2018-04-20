@@ -4,18 +4,21 @@
 		<title>Inicio/Sucursales</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/promociones.css">
-		<link rel="stylesheet" type="text/css" href="css/menuDes.css">
+		<script type="text/javascript" src="js/funciones.js"></script>
+		<script type="text/javascript" src="js/grafica/Chart.js"></script>
+		<script type="text/javascript" src="js/grafica/Chart.bundle.js"></script>
+		<script type="text/javascript" src="js/grafica/Chart.bundle.min.js"></script>
+		<script type="text/javascript" src="js/grafica/Chart.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/tarjetas.css">
+		<link rel="stylesheet" type="text/css" href="css/menuDes.css">
 		<link rel="stylesheet" type="text/css" href="css/Fonts/stylesheet.css">
 		<link rel="stylesheet" type="text/css" href="css/FontAwesome/fontawesome-all.css">
-		<script type="text/javascript" src="js/funciones.js"></script>
 		<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval' ; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';">
 	</head>
-	<body id="inicio" onload="verificar(); level();">
-
-<!-- Slide bar -->
-		<div id="sidebar" class="sidebar">
+	<body id="inicio" onload="level();">
+		<form name="filtro" method="get">
+				<div id="sidebar" class="sidebar">
 				<div class="ama" style="background-color:  #262228">
 					<h1 class="txt-cntr">AMA</h1>
 				</div>
@@ -27,15 +30,7 @@
 					<div id="der">						
 						
 					</div>
-						<!-- <img class="img" id="" src="user.png">
-						<i class="far fa-star"></i>
-						<p id="nivel">Nivel </p> -->
-						<!-- #6fa6c4
-							#c4e5ee
-
-							#6ea9c1
-							#93bfca
-						 -->
+						
 					
 				</div>
 				<div style="width: 100%; height: 100%; background-color: #FFCE00;">
@@ -54,59 +49,28 @@
 					</ul>
 				</div>
 			</div>
-<!-- Fin slide bar -->
-		<div class="nav-bar">
-			<div id="contenido">
-				<i id="abrir" class="abrir-cerrar fas fa-bars" onclick="mostrar()" style="color: var(--oscuro);"></i>
-				<i id="cerrar" class="abrir-cerrar fas fa-bars" href="#" onclick="ocultar()" style="color: var(--oscuro);"></i>
+			<div class="nav-bar">
+				<div id="contenido">
+					<i id="abrir" class="abrir-cerrar fas fa-bars" onclick="mostrar()" style="color: var(--oscuro);"></i>
+					<i id="cerrar" class="abrir-cerrar fas fa-bars" href="#" onclick="ocultar()" style="color: var(--oscuro);"></i>
+				</div>
+				<div class="header"><h1 class="txt-cntr">AMA</h1></div>
+				
 			</div>
-			<div class="header"><h1 class="txt-cntr">AMA</h1></div>
-			
-		</div>
-		<div class="titulo">
-			<h1 style="color: white;">Recompensas</h1>
-		</div>
-		<div class="contiene">
-			<div class="recompensas">
-				<div class = 'nivel' id="nivel1">
-					<div class="cont-img">
-						<img class="img" src="img/nissan.png">
-					</div>
-					<div class="info">
-						<h2 class="textoNivel">Nivel: </h2><input type="number" id="nivelP1" name="" value="1" readonly>
-						<h2 class="tlt-info txt-cntr">2x1 Cinépolis</h2>
-						<ul>
-							<li>Aplica 2x1 de lunes a Viernes</li>
-							<li>en cualquier Cinepolis</li>
-						</ul>
-					</div>
-				</div>
-				<div class = 'nivel' id="nivel2">
-					<div class="cont-img">
-						<img class="img" src="img/bimbo.png">
-					</div>
-					<div class="info">
-						<h2 class="textoNivel">Nivel: </h2><input type="number" id="nivelP2" name="" value="5" readonly>
-						<h2 class="tlt-info txt-cntr">15% de descuento</h2>
-						<ul>
-							<li>Aplica en Coca-Cola de 2lt</li>
-							<li>Válido solo para tiendas OXXO</li>
-						</ul>
-					</div>
-				</div>
-				<div class = 'nivel' id="nivel3">
-					<div class="cont-img">
-						<img class="img" src="img/nestle.png">
-					</div>
-					<div class="info">
-						<h2 class="textoNivel">Nivel: </h2><input type="number" id="nivelP3" name="" value="25" readonly>
-						<h2 class="tlt-info txt-cntr">Camara Canon</h2>
-						<ul>
-							<li> Totalmente gratis</li>
-						</ul>
-					</div>
+			<div class="titulo">
+				<h2>Nosotros</h2>
+			</div>
+			<div class="consejos2">
+				<div class='card' >
+					<h1 style='color: #007849; font-weight: bold; font-size: 18px;'>Compromiso con el ambiente</h1>
+					<h2>Al utilizar AMA tenemos claro nuestro objetivo:</h2>
+					<h2 style="font-weight: bold;">Compromiso con el país y su ecosistema</h2><br><br>
+					<h2>Sabemos que es difícil el ahorrar agua después acostumbrarnos a un gran consumo. Sin embargo, al desarrollar AMA
+					 buscamos el recompensar al usuario por su constante lucha de ahorrar agua, buscando que se le reconozca el</h2>
+					<h2>arduo trabajo de cambiar sus hábitos.</h2><br>
+					<h2 style="font-weight: bold;">Logramos desarrollar AMA con todo el cariño que le tenemos a nuestro planeta</h2>
 				</div>
 			</div>
-		</div>
+		</form>
 	</body>
 </html>
