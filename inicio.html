@@ -18,40 +18,33 @@
 	</head>
 	<body id="inicio" onload="grafica(); actualizar(); level();">
 		<form name="filtro" method="get">
-<!-- Slide bar -->
+			<!-- Slide bar -->
 			<div id="sidebar" class="sidebar">
-				<div class="ama" style="background-color:  #262228">
-					<h1 class="txt-cntr">AMA</h1>
-				</div>
-				<div class="user" >
-					<div id="izq">
-						<img class="img" id="img1" src="img/user.png" style="padding-left:15px; height: 75%;">
-						<p style="font-size: 20px; padding-left: 35px; color: white;  " id="level"></p>
+				<div class="primer">
+					<div class="ama" >
+						<h1 class="txt-cntr">AMA</h1>
 					</div>
-					<div id="der">						
-						
+					<div class="user" >
+						<div id="izq">
+							<img class="img" id="img1" src="img/user.png" style="padding-left:15px;height: 75%;width: 60%;position:  absolute;left: 15%;">
+							<p style="font-size: 20px; padding-left: 35px; color: white; position: absolute; bottom: 0; left: 20%;  " id="level"></p>
+						</div>
 					</div>
-						
-					
 				</div>
-				<div style="width: 100%; height: 100%; background-color: #FFCE00;">
+				
+				<div class="cosas">
 					<ul class="menu">
 						<br>
 						<i class="fa fa-home" style="font-size: 25px; float: left; margin-top: 5px; color: white;"></i><li><a href="inicio.html" style="width: 80%; float: left; margin-left: 10px; font-size: 22px; color: white;">     Pagina Principal</a></li><br><br><br>
-
 						<i class="fa fa-gift" style="font-size: 25px; float: left; margin-top: 5px; color: white;"></i><li><a href="promociones.html" style="width: 80%; float: left; margin-left: 10px; font-size: 22px; color: white;">		Recompensas</a></li><br><br><br>
-
 						<i class="fas fa-chart-line" style="font-size: 25px; float: left; margin-top: 5px; color: white;"></i><li><a href="Graficos.html" style="width: 80%; float: left; margin-left: 10px; font-size: 22px; color: white;">			Ranking</a></li><br><br><br>
-
 						<i class="fas fa-question-circle" style="font-size: 25px; float: left; margin-top: 5px; color: white;"></i><li><a href="acercaDe.html" style="width: 80%; float: left; margin-left: 10px; font-size: 22px; color: white;">	  Sobre AMA</a></li><br><br><br>
-	 
+						
 						<i class="fas fa-comments" style="font-size: 25px; float: left; margin-top: 5px; color: white;"></i><li><a href="#" style="width: 80%; float: left; margin-left: 10px; font-size: 22px; color: white;">				Contacto</a></li>
-
 					</ul>
 				</div>
 			</div>
-<!-- Fin slidebar -->
-
+			<!-- Fin slidebar -->
 			<div class="nav-bar">
 				<div id="contenido">
 					<i id="abrir" class="abrir-cerrar fas fa-bars" onclick="mostrar()" style="color: var(--oscuro);"></i>
@@ -99,6 +92,5 @@
 			
 		</form>
 		<script type="text/javascript">window.addEventListener('load', llenado, true);</script>
-
 	</body>
 </html>
