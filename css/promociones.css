@@ -241,3 +241,27 @@ input[type='number']{
 		margin-top: 5px;
 }
 
+
+.contiene{
+	position: relative;
+	top: 7.5%;
+	margin: 10px;
+	width: 100%;
+	top: 15%;
+}
+.contiene2{
+	position: relative;
+	top: 50%;
+	margin: 10px;
+	width: 100%;
+}
+.contiene3{
+	position: relative;
+	top: -20%;
+	margin: 10px;
+	width: 100%;
+}
+ul, h3{
+	color: azure;
+	left: 50%;
+}

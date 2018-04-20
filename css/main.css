@@ -156,9 +156,10 @@ input{
 	top: 7.5%;
 }
 .ama{
-	position: absolute;
+	/*position: absolute;*/
 	margin-top: -65px;
-	left: 38%;
+	left: 40%;
+	background-color: var(--complemento);
 }
 
 .titulo > h2{
